@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria - Demon Slayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/5091624/5091624-hd_1920_1080_24fps.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="game-container">
+        <h1>Juego de Memoria - Sport Cars</h1>
+        <div id="timer">Tiempo restante: 60s</div>
+        <div id="gameBoard"></div>
+    </div>
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <span id="closeGameOverModal" class="close-button">&times;</span>
+            <p>Game Over...🤭</p>
+            <img src="images/Game Over.jpg" alt="Game Over">
+            <div class="buttons">
+                <button id="restartGameOver">Reiniciar Juego</button>
+                <button id="closeGameOver">Cerrar Juego</button>
+            </div>
+        </div>
+    </div>
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <span id="closeWinnerModal" class="close-button">&times;</span>
+            <p>¡Has Ganado! 👍✅</p>
+            <div class="buttons">
+                <button id="restartWinner">Reiniciar Juego</button>
+                <button id="closeWinner">Cerrar Juego</button>
+            </div>
+        </div>
+    </div>
+    <script src="Appa.js"></script>
+</body>
+</html>
